@@ -1,12 +1,12 @@
-function square(num: number): number {
-  return num * num;
+function printName(person: { first: string, last: string }): void {
+  console.log(`${person.first} ${person.last}`);
 }
 
-const doSomething = (person: string, age: number, isFunny: boolean) => {};
-doSomething("Junya", 38, true)
+printName({ first: "John", last: "Honor" });
 
-function greet(person: string = "stranger"): string {
-  return `Hi there, ${person}!`;
+let coordinate: {x: number, y: number} = {
+  x: 2, 
+  y: 4,
 }
 
-greet();
+
